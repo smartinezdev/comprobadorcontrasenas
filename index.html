@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Checker</title>
+        <!--Archivo Css-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="app">
+            <div class="contenido">
+                <img src="img/logo.svg" class="logo" alt="Password Checker" />
+                <input
+                    type="text"
+                    class="caja-texto"
+                    placeholder="Escriba su contraseña"
+                    onkeyup="checker()" />
+                <div class="indicador">
+                    <span class="span debil"></span>
+                    <span class="span medio"></span>
+                    <span class="span fuerte"></span>
+                </div>
+                <p class="mensaje"></p>
+            </div>
+        </div>
+        <!--Archivo JavaScript-->
+        <script src="js/script.js"></script>
+    </body>
+</html>
